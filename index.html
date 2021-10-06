@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Styles/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Return form</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="icon">
+				<img src="Images/Asset 4.svg" />
+			</div>
+			<div class="navigation">
+				<span>drive</span>
+				<span>recordings</span>
+				<span>documents</span>
+				<span>people</span>
+				<span>guides</span>
+				<span>returns</span>
+				<span>reviews</span>
+				<span>calander</span>
+			</div>
+		</div>
+		<div class="body-items">
+			<div class="return-form">
+				<div class="mainbox-header">
+					<h1>Return assignment</h1>
+				</div>
+				<div class="mainbox">
+					<div id="return">
+						<div class="info">
+							<p><strong>Guide / </strong>Design - UI accessibility</p>
+							<p><strong>Deliverable / </strong>Figma Prototype</p>
+							<p><strong>Module / </strong>3 - Fundementals</p>
+						</div>
+						<form class="forms" id="myForm">
+							<label for="github">Github / Figma</label>
+							<input
+								type="text"
+								id="github"
+								name="github"
+								required
+								oninput="removeErrorMessage(this)"
+							/>
+							<div class="errorMessage" id="github-errorMessage"></div>
+							<label for="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								oninput="removeErrorMessage(this)"
+							/>
+							<div class="errorMessage" id="email-errorMessage"></div>
+							<label for="comment">Comment</label>
+							<textarea
+								type="text"
+								id="comment"
+								name="comment"
+								required
+								oninput="removeErrorMessage(this)"
+							></textarea>
+							<div class="errorMessage" id="comment-errorMessage"></div>
+							<div class="checkbox">
+								<input
+									type="checkbox"
+									id="terms_and_conditions"
+									onclick="terms_changed(this)"
+								/>
+								<label for="terms_and_conditions"
+									>I have set my project to public so anyone can view and review
+									my project.</label
+								>
+							</div>
+							<div class="button">
+								<button id="submit_button" disabled>Return</button>
+							</div>
+						</form>
+					</div>
+					<div id="return-complete" class="completed">
+						<h2>Good Job!</h2>
+						<p>Assignment returned</p>
+						<div class="button">
+							<button type="button" onclick="reset()">Go Back</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calander-box">
+				<div class="calander-header">
+					<h1>Friday / Oct 1</h1>
+				</div>
+				<div class="calander-main">
+					<div class="calander-row">
+						<div>
+							<p class="calander-title">Lets talk about design</p>
+							<p>Zoom / Classroom</p>
+						</div>
+						<p class="calander-time">10:00 - 11:00</p>
+					</div>
+					<div class="calander-row">
+						<div>
+							<p class="calander-title">Friday checkin</p>
+							<p>Zoom / Classroom</p>
+						</div>
+						<p class="calander-time">13:00 - 14:00</p>
+					</div>
+					<div class="calander-row">
+						<div>
+							<p class="calander-title">Lets talk about code</p>
+							<p>Zoom</p>
+						</div>
+						<p class="calander-time">15:00 - 16:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="assign-box">
+				<div class="assign-header">
+					<h1>Assignments</h1>
+				</div>
+				<div class="assign-main">
+					<h2>Module 3</h2>
+					<p><strong>html & css</strong></p>
+					<p>Animating</p>
+					<button>see guide</button>
+					<p>Return date 05.10</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="javascript.js"></script>
+	</body>
+</html>

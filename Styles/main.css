@@ -1,0 +1,349 @@
+h1 {
+  font-family: "Work Sans", sans-serif;
+  size: 24pt;
+  text-transform: uppercase;
+  letter-spacing: 5%;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+  size: 24pt;
+  font-weight: 600;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  size: 16pt;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+span {
+  font-family: "Work Sans", sans-serif;
+  size: 24pt;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+}
+
+strong {
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+button {
+  width: 120px;
+  height: 48px;
+  background: #579cbe;
+  border-radius: 16px;
+  border: none;
+  font-family: Work Sans;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 32px 90px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 90px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.navbar img {
+  width: 40px;
+  margin-right: 90px;
+}
+
+.navbar .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar span {
+  padding-left: 24px;
+}
+
+.body-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.return-form {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 4;
+  max-width: 800px;
+  min-width: 480px;
+  margin-bottom: 32px;
+}
+
+.return-form .mainbox-header {
+  background-color: #00467f;
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  border-radius: 16px 16px 0 0;
+  padding: 16px 24px;
+  margin-bottom: 0px;
+}
+
+.return-form input,
+.return-form textarea {
+  background-color: rgba(202, 202, 202, 0.5);
+}
+
+.return-form label {
+  font-family: "Work Sans", sans-serif;
+}
+
+.return-form .mainbox {
+  background: rgba(202, 202, 202, 0.15);
+  padding: 40px 0 0 40px;
+  border-radius: 0 0 16px 16px;
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  padding-right: 40px;
+}
+
+.return-form .info {
+  border-bottom: 1px solid #cacaca;
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+}
+
+.return-form .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.return-form .info p {
+  margin: 0;
+}
+
+.return-form .forms label {
+  size: 16pt;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.return-form .forms input {
+  border-radius: 16px;
+  border: none;
+  margin-top: 8px;
+  height: 24px;
+  width: 400px;
+  padding-left: 8px;
+}
+
+.return-form .forms .errorMessage {
+  margin: 4px 8px 24px;
+}
+
+.return-form textarea {
+  border-radius: 16px;
+  border: none;
+  margin-top: 8px;
+  height: 160px;
+  width: 400px;
+  padding: 8px;
+}
+
+.return-form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.return-form .checkbox input {
+  background-color: rgba(202, 202, 202, 0.5);
+  width: auto;
+  height: auto;
+  margin: 0 8px 0 0;
+  text-align: center;
+}
+
+.return-form .checkbox label {
+  size: 8pt;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+.return-form button {
+  margin: 42px 0 42px;
+}
+
+.return-form .forms .error {
+  border: 1px solid red;
+}
+
+.return-form .forms .errorMessage {
+  display: inline-block;
+  color: red;
+}
+
+.message-box {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  width: 400px;
+  margin-bottom: 32px;
+}
+
+.message-box .message-header {
+  background-color: #579cbe;
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  padding: 16px 24px;
+}
+
+.message-box .message-main {
+  background: rgba(202, 202, 202, 0.15);
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  padding: 24px;
+  height: 162px;
+}
+
+.calander-box {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  width: 400px;
+  min-width: 400px;
+  margin-bottom: 32px;
+}
+
+.calander-box .calander-header {
+  background-color: #579cbe;
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.calander-box .calander-main {
+  background: rgba(202, 202, 202, 0.15);
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+.calander-box .calander-main .calander-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calander-box .calander-main .calander-row .calander-title {
+  font-weight: 600;
+}
+
+.assign-box {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  width: 400px;
+}
+
+.assign-box .assign-header {
+  background-color: #579cbe;
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.assign-box .assign-main {
+  background: rgba(202, 202, 202, 0.15);
+  border: 2px solid rgba(58, 58, 58, 0.75);
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.assign-box button {
+  margin: 18px;
+}
+
+@media (max-width: 1064px) {
+  .body-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .return-form {
+    width: 400px;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.completed {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
